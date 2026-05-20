@@ -1,7 +1,7 @@
 <h1 align="center">Reverse Flow Matching</h1>
 
 <p align="center">
-  <b><a href="https://arxiv.org/abs/2601.08136">Reverse Flow Matching: A Unified Framework for Online Reinforcement Learning with Diffusion and Flow Policies</a></b>
+  <b><a href="https://arxiv.org/abs/2601.08136">A Unified Framework for Online Reinforcement Learning with Diffusion and Flow Policies</a></b>
   <br><br>
   Zeyang Li &nbsp;·&nbsp; Sunbochen Tang &nbsp;·&nbsp; Navid Azizan
   <br>
