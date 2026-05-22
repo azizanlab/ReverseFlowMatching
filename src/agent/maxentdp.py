@@ -493,17 +493,19 @@ class MaxEntDP:
             eps_target = -jnp.sum(weights[:, :, None] * noise_candidates, axis=1)
 
             temp_batch = rl_temp * jnp.ones((batch_size,))
-            actor_loss, net_params, net_opt_state, actor_grad_norm = update_actor_maxentdp(
-                net,
-                net_params,
-                log_snr,
-                noisy_actions,
-                states,
-                temp_batch,
-                eps_target,
-                net_opt,
-                net_opt_state,
-                actor_max_grad_norm,
+            actor_loss, net_params, net_opt_state, actor_grad_norm = (
+                update_actor_maxentdp(
+                    net,
+                    net_params,
+                    log_snr,
+                    noisy_actions,
+                    states,
+                    temp_batch,
+                    eps_target,
+                    net_opt,
+                    net_opt_state,
+                    actor_max_grad_norm,
+                )
             )
             agent_step += 1
 
